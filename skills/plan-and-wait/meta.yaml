@@ -1,0 +1,11 @@
+name: plan-and-wait
+title: Plan And Wait
+version: 0.1.0
+summary: Сначала показать понимание задачи и план, затем остановиться до явного подтверждения пользователя.
+scope: universal
+language: ru
+tags:
+  - planning
+  - confirmation
+  - pause
+  - workflow

@@ -1,0 +1,11 @@
+name: docs-closeout
+title: Docs Closeout
+version: 0.1.0
+summary: Перед завершением задачи проверяет, какие документы должны быть обновлены, и формирует короткий closeout.
+scope: universal
+language: ru
+tags:
+  - documentation
+  - changelog
+  - readme
+  - closeout

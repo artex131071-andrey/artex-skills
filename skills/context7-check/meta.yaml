@@ -1,0 +1,11 @@
+name: context7-check
+title: Context7 Check
+version: 0.1.0
+summary: Проверяет зависимость через Context7 и первичные источники до установки или обновления пакета.
+scope: universal
+language: ru
+tags:
+  - dependencies
+  - context7
+  - package-management
+  - verification
