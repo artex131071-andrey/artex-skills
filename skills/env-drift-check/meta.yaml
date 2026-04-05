@@ -1,0 +1,11 @@
+name: env-drift-check
+title: Env Drift Check
+version: 0.1.0
+summary: Проверяет расхождения окружения, конфигов и сценариев запуска между платформами и режимами разработки.
+scope: universal
+language: ru
+tags:
+  - environment
+  - windows
+  - linux
+  - configuration

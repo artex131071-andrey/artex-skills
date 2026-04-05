@@ -1,0 +1,11 @@
+name: readme-refresh
+title: README Refresh
+version: 0.1.0
+summary: Сверяет README с текущим состоянием проекта и обновляет только реально устаревшие части.
+scope: universal
+language: ru
+tags:
+  - readme
+  - documentation
+  - onboarding
+  - sync

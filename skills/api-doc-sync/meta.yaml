@@ -1,0 +1,11 @@
+name: api-doc-sync
+title: API Doc Sync
+version: 0.1.0
+summary: Проверяет и синхронизирует API-документацию с фактическим контрактом кода.
+scope: universal
+language: ru
+tags:
+  - api
+  - documentation
+  - contracts
+  - openapi

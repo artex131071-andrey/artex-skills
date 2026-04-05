@@ -1,0 +1,11 @@
+name: db-change-safety
+title: DB Change Safety
+version: 0.1.0
+summary: Проверяет миграции, schema changes и data-изменения на совместимость, rollback и риски для данных.
+scope: universal
+language: ru
+tags:
+  - database
+  - migrations
+  - safety
+  - rollback

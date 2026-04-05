@@ -1,0 +1,11 @@
+name: cleanup-pass
+title: Cleanup Pass
+version: 0.1.0
+summary: Делает локальную расчистку вокруг выполненной задачи без изменения поведения системы.
+scope: universal
+language: ru
+tags:
+  - cleanup
+  - refactoring
+  - maintenance
+  - quality

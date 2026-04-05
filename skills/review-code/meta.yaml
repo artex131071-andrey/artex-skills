@@ -1,0 +1,11 @@
+name: review-code
+title: Review Code
+version: 0.1.0
+summary: Структурированное инженерное ревью с приоритетом багов, регрессий, рисков и пропущенных тестов.
+scope: universal
+language: ru
+tags:
+  - review
+  - bugs
+  - regressions
+  - quality
