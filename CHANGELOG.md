@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0 - 2026-04-05
+
+- добавлен универсальный skill `gh-actions-repair` для цикла диагностики и починки GitHub Actions через `gh`;
+- обновлен `README.md` со списком доступных скиллов.
+
 ## 0.2.0 - 2026-04-05
 
 - добавлены универсальные скиллы `review-code`, `readme-refresh`, `api-doc-sync`, `cleanup-pass`, `env-drift-check`, `db-change-safety`;

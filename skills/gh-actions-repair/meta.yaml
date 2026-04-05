@@ -1,0 +1,11 @@
+name: gh-actions-repair
+title: GH Actions Repair
+version: 0.1.0
+summary: Диагностирует и чинит падения GitHub Actions через gh с повторной проверкой run до зеленого статуса или явного блокера.
+scope: universal
+language: ru
+tags:
+  - github
+  - actions
+  - ci
+  - repair
