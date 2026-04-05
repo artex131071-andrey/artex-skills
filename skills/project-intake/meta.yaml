@@ -1,0 +1,11 @@
+name: project-intake
+title: Project Intake
+version: 0.1.0
+summary: Адаптивный онбординг в репозиторий с fallback-поиском ключевой документации и правил перед заметной работой.
+scope: universal
+language: ru
+tags:
+  - onboarding
+  - intake
+  - documentation
+  - workflow
