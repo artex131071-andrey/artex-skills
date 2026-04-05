@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0 - 2026-04-05
+
+- `sync-skills.ps1` расширен: теперь дополнительно копирует каждый `SKILL.md` в `~/.claude/commands/` как глобальные slash-команды Claude Code;
+- добавлен UTF-8 BOM в `sync-skills.ps1` для корректной работы в Windows PowerShell 5.1;
+- создан `~/.claude/CLAUDE.md` с тремя always-on скиллами: `project-intake`, `plan-and-wait`, `docs-closeout`;
+- обновлена секция установки в `README.md`.
+
 ## 0.4.0 - 2026-04-05
 
 - добавлен универсальный skill `project-intake` с fallback-логикой по типовым структурам репозиториев;

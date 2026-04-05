@@ -1,10 +1,11 @@
-<#
+﻿<#
 .SYNOPSIS
-    Синхронизирует скиллы из artex-skills в ~/.copilot/copilot-instructions.md
+    Синхронизирует скиллы из artex-skills в Copilot CLI и Claude Code.
 
 .DESCRIPTION
-    Читает все SKILL.md из skills/*/SKILL.md, объединяет их в один файл
-    и записывает в $HOME/.copilot/copilot-instructions.md.
+    Читает все SKILL.md из skills/*/SKILL.md и:
+    1. Объединяет их в $HOME/.copilot/copilot-instructions.md (для Copilot CLI)
+    2. Копирует каждый SKILL.md в $HOME/.claude/commands/<name>.md (для Claude Code slash-команд)
     Запускать вручную после добавления или обновления скиллов.
 
 .EXAMPLE
@@ -67,4 +68,22 @@ if (-not (Test-Path $OutputDir)) {
 $Lines | Out-File -FilePath $OutputFile -Encoding UTF8 -Force
 
 $SkillCount = $SkillDirs.Count
-Write-Host "✓ Синхронизировано $SkillCount скиллов → $OutputFile" -ForegroundColor Green
+Write-Host "✓ Copilot: синхронизировано $SkillCount скиллов → $OutputFile" -ForegroundColor Green
+
+# --- Claude Code: копируем каждый SKILL.md как slash-команду ---
+$ClaudeCommandsDir = Join-Path $HOME ".claude\commands"
+if (-not (Test-Path $ClaudeCommandsDir)) {
+    New-Item -ItemType Directory -Path $ClaudeCommandsDir -Force | Out-Null
+}
+
+$ClaudeCount = 0
+foreach ($dir in $SkillDirs) {
+    $SkillFile = Join-Path $dir.FullName "SKILL.md"
+    if (-not (Test-Path $SkillFile)) { continue }
+
+    $Dest = Join-Path $ClaudeCommandsDir "$($dir.Name).md"
+    Copy-Item $SkillFile $Dest -Force
+    $ClaudeCount++
+}
+
+Write-Host "OK Claude: $ClaudeCount skills -> $ClaudeCommandsDir" -ForegroundColor Cyan
