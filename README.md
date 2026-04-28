@@ -65,6 +65,7 @@ skills/
 - **Gemini CLI**: `~/.gemini/skills/`
 - **Claude Code**: `~/.claude/commands/`
 - **Codex**: `~/.codex/skills/`
+- **Copilot CLI**: `~/.copilot/copilot-instructions.md`
 
 ### Глобальные конфигурации
 
@@ -73,6 +74,7 @@ skills/
 1. **`~/.gemini/GEMINI.md`**: содержит список всех Artex Skills и правило русского языка.
 2. **`~/.claude/CLAUDE.md`**: включает три "always-on" скилла (`project-intake`, `plan-and-wait`, `docs-closeout`) и правило русского языка.
 3. **`~/.codex/AGENTS.md`** и **`~/.codex/rules/global.md`**: содержат полный список скиллов и языковой стандарт.
+4. **`~/.copilot/copilot-instructions.md`**: содержит объединенную версию всех `SKILL.md` без YAML frontmatter и с явным списком ID скиллов.
 
 ### Использование в проектах
 
@@ -84,4 +86,4 @@ skills/
 Эти файлы содержат актуальный список доступных глобальных инструментов в самом верху документа.
 
 ---
-*(Обновлено: 2026-04-06)*
+*(Обновлено: 2026-04-28)*

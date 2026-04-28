@@ -32,6 +32,13 @@ $Lines = [System.Collections.Generic.List[string]]::new()
 $Lines.Add("# Пользовательские скиллы Андрея (artex-skills)")
 $Lines.Add("")
 $Lines.Add("Следующие разделы описывают поведенческие скиллы для работы с проектами. Каждый скилл сам определяет условия своего применения через секцию «Когда применять». Источник истины: ``$SkillsDir``.")
+$Lines.Add("")
+$Lines.Add("## Доступные скиллы")
+$Lines.Add("")
+
+foreach ($dir in $SkillDirs) {
+    $Lines.Add("- ``$($dir.Name)``")
+}
 
 foreach ($dir in $SkillDirs) {
     $SkillFile = Join-Path $dir.FullName "SKILL.md"
@@ -55,6 +62,8 @@ foreach ($dir in $SkillDirs) {
 
     $Lines.Add("")
     $Lines.Add("---")
+    $Lines.Add("")
+    $Lines.Add("## ``$($dir.Name)``")
     $Lines.Add("")
     $Lines.Add($Body)
 }
