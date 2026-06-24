@@ -1,6 +1,6 @@
 ---
 ### Доступные глобальные скиллы (Artex Skills)
-В системе глобально установлены следующие скиллы (доступны для Gemini, Claude, Codex и Copilot):
+В системе глобально установлены следующие скиллы (доступны для Gemini, Claude, Codex и Copilot). Для Codex в WSL2 глобальный путь: `~/.codex/skills/<skill-name>/SKILL.md` (фактически `/home/artex/.codex/skills/<skill-name>/SKILL.md`):
 - `project-intake` — Универсальный скилл для первичного анализа и погружения в проект.
 - `plan-and-wait` — Планирование задач и ожидание подтверждения.
 - `docs-closeout` — Завершение работы с документацией.
